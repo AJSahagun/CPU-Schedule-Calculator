@@ -103,7 +103,7 @@ To get a local copy up and running, follow these simple steps.
    ```
 2. Navigate to the project directory
    ```sh
-   cd cpu-scheduling-simulator
+   cd cpu-schedule-calculator
    ```
 3. Install required packages
    ```sh

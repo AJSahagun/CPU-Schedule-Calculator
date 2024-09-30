@@ -2,7 +2,6 @@ import heapq
 from collections import deque
 import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib import pyplot
 
 
 class Process:
@@ -223,7 +222,7 @@ def plot_gantt_chart(timeline, processes):
     ax.set_xlabel('Time (ms)')
     ax.set_yticks([])
 
-    colors = pyplot.get_cmap('tab10')(np.linspace(0, 1, len(processes)))
+    colors = plt.get_cmap('tab10')(np.linspace(0, 1, len(processes)))
     color_map = {p.name: colors[i] for i, p in enumerate(processes)}
 
     max_time = max(end for _, _, end in timeline)
